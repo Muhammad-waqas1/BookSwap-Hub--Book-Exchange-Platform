@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List a Book | BookSwap Hub</title>
+    
+    <!-- Bootstrap 5 CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Tailwind CSS CDN -->
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <!-- Animate.css for Beautiful Animations -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    <!-- AOS CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+
+    <!-- AOS JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+
+    <!-- Modern Blur Background Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top glassmorphic-nav">
+        <div class="container">
+            <a class="navbar-brand fw-bold text-white" href="index.html">📚 BookSwap Hub</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link text-white" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="about.html">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="books.html">Browse Books</a></li>
+                    <li class="nav-item"><a class="nav-link text-white active" href="list-book.html">List a Book</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="requests.html">Exchange Requests</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="list-book-header">
+        <div class="container my-5 text-center">
+            <h1>List a Book</h1>
+            <p>Share your books with others and find amazing new reads!</p>
+        </div>
+    </header>
+
+    <!-- Book Listing Form -->
+    <section class="container mt-5">
+        <div class="row">
+            <div class="col-md-8 mx-auto">
+                <form action="#" method="POST" enctype="multipart/form-data">
+                    <div class="mb-3">
+                        <label for="bookTitle" class="form-label">Book Title</label>
+                        <input type="text" class="form-control" id="bookTitle" placeholder="Enter book title" required>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="authorName" class="form-label">Author</label>
+                        <input type="text" class="form-control" id="authorName" placeholder="Enter author's name" required>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="bookGenre" class="form-label">Genre</label>
+                        <select class="form-select" id="bookGenre">
+                            <option selected>Select Genre</option>
+                            <option>Fiction</option>
+                            <option>Non-Fiction</option>
+                            <option>Self-Help</option>
+                            <option>Science Fiction</option>
+                            <option>Fantasy</option>
+                            <option>Biography</option>
+                        </select>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="bookCondition" class="form-label">Book Condition</label>
+                        <select class="form-select" id="bookCondition">
+                            <option selected>Select Condition</option>
+                            <option>New</option>
+                            <option>Like New</option>
+                            <option>Used - Good</option>
+                            <option>Used - Acceptable</option>
+                        </select>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="bookDescription" class="form-label">Book Description</label>
+                        <textarea class="form-control" id="bookDescription" rows="4" placeholder="Enter a brief description"></textarea>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="bookImage" class="form-label">Upload Book Cover</label>
+                        <input type="file" class="form-control" id="bookImage" accept="image/*" onchange="previewImage(event)">
+                        <img id="preview" class="img-thumbnail mt-2" style="display: none; max-width: 200px;">
+                    </div>
+
+                    <button type="submit" class="btn btn-primary w-100">Submit Book</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer-section">
+        <div class="container">
+            <div class="row">
+                <!-- About Column -->
+                <div class="col-md-4">
+                    <h5>📚 BookSwap Hub</h5>
+                    <p>A platform where book lovers exchange knowledge and resources effortlessly.</p>
+                    <p>Developed By : <a href="https://github.com/Muhammad-waqas1"> Waqas</a> </p>
+                </div>
+
+                <!-- Quick Links Column -->
+                <div class="col-md-4">
+                    <h5>Quick Links</h5>
+                    <ul class="footer-links">
+                        <li><a href="index.html">🏠 Home</a></li>
+                        <li><a href="books.html">📖 Browse Books</a></li>
+                        <li><a href="list-book.html">➕ List a Book</a></li>
+                        <li><a href="requests.html">🔄 Exchange Requests</a></li>
+                        <li><a href="about.html">ℹ️ About Us</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Column -->
+                <div class="col-md-4">
+                    <h5>📩 Contact Us</h5>
+                    <p>Email: <a href="mailto:support@bookswaphub.com">support@bookswaphub.com</a></p>
+                    <p>Phone: +123 456 7890</p>
+                    <p><a href="index.html#contact" class="btn btn-sm btn-outline-light contact-link">Contact Form</a>
+                    </p>
+                </div>
+            </div>
+
+            <hr>
+            <div class="text-center">
+                <p>&copy; 2025 BookSwap Hub. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Custom JavaScript -->
+    <script src="assets/js/script.js"></script>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        // Image Preview Function
+        function previewImage(event) {
+            const preview = document.getElementById('preview');
+            preview.src = URL.createObjectURL(event.target.files[0]);
+            preview.style.display = 'block';
+        }
+    </script>
+
+
+</body>
+</html>

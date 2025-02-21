@@ -1,0 +1,281 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f8f9fa;
+}
+
+.glassmorphic-nav {
+    background: rgb(167 163 39 / 55%);
+    backdrop-filter: blur(10px);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.hero-section {
+    background: linear-gradient(to right, #4CAF50, #FF9800);
+    color: white;
+    padding: 100px 0;
+}
+
+.hero-title {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.hero-subtitle {
+    font-size: 1.3rem;
+    margin-top: 10px;
+}
+
+.step-card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.step-card:hover {
+    transform: translateY(-5px);
+}
+
+.book-card {
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.book-card img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+
+
+
+/* Book  --------------------------------------------------------------------------------------*/
+
+
+
+
+.books-header {
+    background: linear-gradient(to right, #4CAF50, #FF9800);
+    color: white;
+    padding: 60px 0;
+    text-align: center;
+}
+
+.book-card {
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.book-card img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.book-card h5 {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.book-card p {
+    color: gray;
+}
+
+.pagination .page-link {
+    color: #4CAF50;
+}
+
+
+
+
+/* Book-Detail --------------------------------------------------------------------------------------*/
+
+
+
+
+.book-details {
+    padding: 60px 0;
+}
+
+.book-details img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+.book-description {
+    font-size: 1.1rem;
+    color: #555;
+}
+
+.review-box {
+    background: #f8f9fa;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
+}
+
+
+
+
+
+/* Request books  --------------------------------------------------------------------------------------*/
+
+
+
+
+/* Exchange Requests Page */
+.requests-header {
+    background: linear-gradient(to right, #007bff, #00c851);
+    color: white;
+    padding: 60px 0;
+    text-align: center;
+}
+
+/* Request Cards */
+.request-card {
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.request-card.completed {
+    background: #f1f8e9;
+}
+
+
+/* List-book Page  ------------------------------------------------------------------------------------------*/
+
+
+
+.list-book-header {
+    background: linear-gradient(to right, #56d437, #ff4b2b);
+    color: white;
+    padding: 60px 0;
+    text-align: center;
+}
+
+form {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+
+
+/* About Page  --------------------------------------------------------------------------------------*/
+
+
+
+/* About Page */
+.about-header {
+    background: linear-gradient(to right, #4CAF50, #FF9800);
+    color: white;
+    padding: 60px 0;
+    text-align: center;
+}
+
+/* Team Section */
+.team-card {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.team-card img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+.team-card h4 {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.team-card p {
+    color: #777;
+}
+
+
+/* Extra Overall Styling -_-_-_-_-_-_-__-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_ */
+
+
+.nav-item a:hover{
+    text-shadow: 3px 3px 3px #474d53;
+}
+
+.navbar-brand:hover{
+    text-shadow: 3px 3px 3px #474d53;
+
+}
+
+
+
+
+/* Contact Form and Footer Improvement ----------------- */
+
+
+/* Contact Section */
+.contact-section {
+    background: #f8f9fa;
+    padding: 50px 0;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer Styling */
+.footer-section {
+    background: #222;
+    color: white;
+    padding: 30px 0;
+    margin-top: 40px;
+}
+
+.footer-section h5 {
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links li {
+    margin-bottom: 8px;
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-links a:hover {
+    color: #007bff;
+}
+
+.footer-section a.btn {
+    color: white;
+    border-color: white;
+}
+
+.footer-section a.btn:hover {
+    background: white;
+    color: #222;
+}
